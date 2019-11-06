@@ -1,7 +1,10 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Егор Лимачев](https://up.htmlacademy.ru/adaptive/18/user/167879).
-* Наставник: нет наставника(повторное прохождение).
+<<<<<<< HEAD
+=======
+* Наставник: Без наставника.
+>>>>>>> 570e0168d38bb113c9c96b862e25cbe60fb9a182
 
 ---
 
