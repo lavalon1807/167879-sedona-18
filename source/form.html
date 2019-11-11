@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона-форма</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logotype-mobile.svg" width="100px" height="100px" alt="Логотип шапки">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle button" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="HTMLAcademy.html">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма Седона</h1>
+      <div class="form-entry">
+        <div class="form-entry__title-text">
+          <img src="img/sedona.svg" width="200" height="300" alt="Добропожаловать в Седона">
+        </div>
+        <h2 class="form-entry__sentense">Оставьте свой отзыв</h2>
+        <p class="form-entry__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+
+      <form class="data" action="https://echo.htmlacademy.ru" method="post">
+        <div class="data-impression__top">
+          <h3 class="data__title">Ваше общее впечатление</h3>
+            <input type="radio" name="opinion" id="plus">
+            <label for="plus">Скорее положительное</label>
+            <input type="radio" name="opinion" id="minus">
+            <label for="minus">Затрудняюсь ответить</label>
+            <input type="radio" name="opinion" id="standart">
+            <label for="standart">Скорее отрицательное</label>
+        </div>
+        <div class="data__introduce">
+          <h3 class="data__title">Представьтесь:</h3>
+            <label for="name">Имя*:</label>
+            <input type="text" name="name" id="name" value="Петр">
+            <label for="surename">Фамилия*:</label>
+            <input type="text" name="surename" id="surename" value="Иванов">
+            <label for="patronymic">Отчество*:</label>
+            <input type="text" name="patronymic" id="patronymic" value="Александрович">
+        </div>
+        <div class="data__contacts">
+          <h3 class="contacts__title">Контактная информация:</h3>
+            <label for="phone">Контактный телефон*:</label>
+            <input type="tel" id="phone" name="telephone" value="Введите телефон">
+            <label for="email">Электронная почта*:</label>
+            <input type="email" id="email" name="email" value="Введите e-mail">
+        </div>
+        <div class="data-impression__bottom">
+          <h3 class="data__title">Ваше общее впечатление</h3>
+            <input type="radio" name="opinion" id="plus">
+            <label for="plus">Скорее положительное</label>
+            <input type="radio" name="opinion" id="minus">
+            <label for="minus">Затрудняюсь ответить</label>
+            <input type="radio" name="opinion" id="standart">
+            <label for="standart">Скорее отрицательное</label>
+        </div>
+        <div class="data__vizited">
+          <h3 class="data__title">Посещенные достопримечательности:</h3>
+          <input type="checkbox" name="demon" id="demon" checked>
+          <label for="demon">Мост Дьявола</label>
+          <input type="checkbox" name="ring" id="ring" checked>
+          <label for="ring">Гора-Колокол</label>
+          <input type="checkbox" name="park" id="park" checked>
+          <label for="park">Слайд-парк</label>
+          <input type="checkbox" name="rock" id="rock">
+          <label for="rock">Красные скалы</label>
+        </div>
+        <div class="data__emotion">
+          <h3 class="data__title">Опишите свои эмоции:</h3>
+          <textarea rows="6">Опишите подробно все свои восторги</textarea>
+        </div>
+        <button type="submit" class="data__button button">Отправить вызов</button>
+
+      </form>
+
+      <footer class="page-footer">
+        <div class="page-footer__social social">
+          <p class="social__adress">#Visitsedona</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        </div>
+      </footer>
+
+    </main>
+  </body>
+</html>
