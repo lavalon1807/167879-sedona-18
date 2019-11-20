@@ -39,9 +39,9 @@
         <p class="form-entry__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
 
-      <form class="data" action="https://echo.htmlacademy.ru" method="post">
-        <div class="data-impression__top">
-          <h3 class="data__title">Ваше общее впечатление</h3>
+      <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="data-form__opinion-top">
+          <h3 class="data-form__title">Ваше общее впечатление</h3>
             <input type="radio" name="opinion" id="plus">
             <label for="plus">Скорее положительное</label>
             <input type="radio" name="opinion" id="minus">
@@ -49,8 +49,8 @@
             <input type="radio" name="opinion" id="standart">
             <label for="standart">Скорее отрицательное</label>
         </div>
-        <div class="data__introduce">
-          <h3 class="data__title">Представьтесь:</h3>
+        <div class="data-form__introduce">
+          <h3 class="data-form__title">Представьтесь:</h3>
             <label for="name">Имя*:</label>
             <input type="text" name="name" id="name" value="Петр">
             <label for="surename">Фамилия*:</label>
@@ -58,15 +58,15 @@
             <label for="patronymic">Отчество*:</label>
             <input type="text" name="patronymic" id="patronymic" value="Александрович">
         </div>
-        <div class="data__contacts">
-          <h3 class="contacts__title">Контактная информация:</h3>
+        <div class="data-form__contacts">
+          <h3 class="data-form__title">Контактная информация:</h3>
             <label for="phone">Контактный телефон*:</label>
             <input type="tel" id="phone" name="telephone" value="Введите телефон">
             <label for="email">Электронная почта*:</label>
             <input type="email" id="email" name="email" value="Введите e-mail">
         </div>
-        <div class="data-impression__bottom">
-          <h3 class="data__title">Ваше общее впечатление</h3>
+        <div class="data-form__bottom">
+          <h3 class="data-form__title">Ваше общее впечатление</h3>
             <input type="radio" name="opinion" id="plus">
             <label for="plus">Скорее положительное</label>
             <input type="radio" name="opinion" id="minus">
@@ -74,8 +74,8 @@
             <input type="radio" name="opinion" id="standart">
             <label for="standart">Скорее отрицательное</label>
         </div>
-        <div class="data__vizited">
-          <h3 class="data__title">Посещенные достопримечательности:</h3>
+        <div class="data-form__vizited">
+          <h3 class="data-form__title">Посещенные достопримечательности:</h3>
           <input type="checkbox" name="demon" id="demon" checked>
           <label for="demon">Мост Дьявола</label>
           <input type="checkbox" name="ring" id="ring" checked>
@@ -85,8 +85,8 @@
           <input type="checkbox" name="rock" id="rock">
           <label for="rock">Красные скалы</label>
         </div>
-        <div class="data__emotion">
-          <h3 class="data__title">Опишите свои эмоции:</h3>
+        <div class="data-form__emotion">
+          <h3 class="data-form__title">Опишите свои эмоции:</h3>
           <textarea rows="6">Опишите подробно все свои восторги</textarea>
         </div>
         <button type="submit" class="data__button button">Отправить вызов</button>
