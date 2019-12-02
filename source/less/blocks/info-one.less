@@ -1,17 +1,133 @@
 .info-one {
   .wrapper();
+  outline: 1px solid red;
 }
 
 .info-one__city {
   background-color: #81b3d2;
   color: #ffffff;
+  padding-top: 87px;
 }
 
 .info-one__city-text {
+  margin-bottom: 0;
   .text-font();
+}
+
+.info-one__city-text p {
+  margin-bottom: 0;
+}
+
+.info-one__city-alltext {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .info-one__city-title,
 .info-one__item-title {
   .title-font();
+}
+
+.info-one__item-title {
+  margin: 0;
+}
+
+.info-one__photo {
+  width: 100%;
+  height: 260px;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.info-one__list {
+  width: 230px;
+  text-align: left;
+  padding-left: 70px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  margin-top: 8px;
+}
+
+.info-one__item {
+  padding-top: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .info-one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info-one__list {
+    display: flex;
+    justify-content: space-between;
+    width: 677px;
+    text-align: center;
+    padding-left: 48px;
+    margin-bottom: 46px;
+  }
+
+  .info-one__item {
+    width: 170px;
+    padding-top: 170px;
+  }
+
+  .info-one__item--present {
+    order: 3;
+  }
+
+  .info-one__city {
+    background-color: #81b3d2;
+    width: 52%;
+    padding-top: 30px;
+  }
+
+  .info-one__city-alltext {
+    position: absolute;
+    right: 70%;
+    width: 176px;
+  }
+
+  .info-one__photo {
+    width: 100%;
+    height: 254px;
+    background-image: url("../img/main-city-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 103%;
+  }
+
+  .info-one__city-wrapper {
+    position: relative;
+    display: flex;
+    height: 254px;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-one__photo {
+    width: 100%;
+    height: 254px;
+    background-image: url("../img/main-city-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -76px;
+    margin-left: 442px;
+  }
+
+  .info-one__city {
+    position: absolute;
+    left: 0;
+    height: 224px;
+    width: 35%;
+  }
+
+  .info-one__city-alltext {
+    right: 104px;
+  }
+
+  .info-one__list {
+    width: 1040px;
+  }
 }
