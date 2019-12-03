@@ -1,3 +1,46 @@
-.social-item {
+.social {
+  margin-top: 71px;
+}
+
+.social__item {
+  outline: 1px solid green;
+  min-height: 46px;
+  width: 45px;
   color: #000000;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid red;
+  min-height: 46px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 37px;
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 640px;
+    margin: 0 auto;
+    margin-top: 69px;
+  }
+
+  .social__list {
+    margin-bottom: 8px;
+    margin-top: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    display: flex;
+    width: 960px;
+    margin-top: 77px;
+  }
 }
