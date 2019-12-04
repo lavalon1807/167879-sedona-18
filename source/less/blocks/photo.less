@@ -1,3 +1,8 @@
+.photo {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .photo__name {
   .text-font__small();
   text-transform: uppercase;
@@ -6,8 +11,132 @@
 .photo__autor {
   .text-font__small();
   text-transform: none;
+  margin: 0;
 }
 
 .photo__list {
   text-align: left;
+  padding-top: 27px;
+  margin-bottom: 12px;
+}
+
+.photo__item {
+  padding-bottom: 10px;
+}
+
+.photo__item-text {
+  margin-top: 7px;
+}
+
+.photo__like {
+  display: block;
+  padding-left: 37px;
+  padding-top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+  }
+
+  .photo__list--1 img {
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo__list--2 {
+    width: 324px;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .photo__list--2 > .photo__item-text {
+    width: 275px;
+  }
+
+  .photo__list--2 img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo__item {
+    width: 648px;
+    padding-bottom: 5px;
+  }
+
+  .photo__item-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 648px;
+    margin-top: 0;
+    padding-bottom: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .photo__item-text {
+    padding-left: 21px;
+    padding-right: 31px;
+    justify-content: none;
+  }
+
+  .photo__list > .photo__item-text {
+    width: 100%;
+    margin-top: -66px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__item {
+    padding: 0;
+  }
+
+  .photo__list--1 {
+    width: 1200px;
+  }
+
+  .photo__list--1 img {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo__list--2 {
+    width: 400px;
+    height: 265px;
+  }
+
+  .photo__list--2 img {
+    width: 400px;
+    height: 265px;
+  }
+
+  .photo__list--1 picture {
+    height: 400px;
+  }
+
+  .photo__list--2 picture {
+    height: 265px;
+  }
 }
