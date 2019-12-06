@@ -16,7 +16,11 @@
 }
 
 /*--------------------------*/
-.data-form__opinion-top {
+.data-form {
+  margin-top: 10px;
+}
+
+.data-form__top {
   display: none;
 }
 
@@ -32,4 +36,199 @@
 
 .data-form__title {
   .title-font();
+  padding-top: 16px;
+  padding-bottom: 3px;
+}
+
+.data-form__introduce {
+  width: 280px;
+  margin: 0 auto;
+  min-height: 302px;
+}
+
+.data-form__title-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data-form__title-form label {
+  padding: 17px 0;
+  padding-right: 3px;
+}
+
+.data-form__title-form input {
+  flex-grow: 1;
+  width: 60%;
+  padding: 16px 0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.data-form__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.data-form__contacts input {
+  flex-grow: 1;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 17px 22px 16px;
+  margin-bottom: 12px;
+}
+
+.data-form__contacts label {
+  padding-left: 20px;
+  padding-bottom: 6px;
+}
+
+.data-form__title-contacts {
+  .title-font();
+  padding-left: 20px;
+  padding-bottom: 3px;
+}
+
+.data-form__bottom {
+  width: 280px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  min-height: 287px;
+}
+
+.data-form__bottom-form {
+  width: 200px;
+  padding-left: 60px;
+  padding-top: 17px;
+}
+
+.data-form__bottom-form input {
+  margin-bottom: 50px;
+}
+
+.data-form__vizited {
+  width: 280px;
+  margin: 0 auto;
+  min-height: 383px;
+  outline: 1px solid red;
+  margin-bottom: 20px;
+}
+
+.data-form__title-vizited {
+ .title-font();
+}
+
+.data-form__vizited-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data-form__vizited-form input {
+  display: none;
+}
+
+.data-form__vizited-form label {
+  width: 269px;
+  padding-bottom: 41px;
+  padding-top: 13px;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.data-form__emotion {
+  width: 280px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.data-form__title-emotion {
+  .title-font();
+}
+
+.data-form__emotion textarea {
+  width: 260px;
+  padding-top: 15px;
+  padding-left: 20px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.data-form__button {
+  margin-top: 55px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 16px 49px;
+}
+
+@media (min-width: @tablet-width) {
+  .data-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .data-form__top {
+    display: block;
+    width: 324px;
+    margin: 0 auto;
+    outline: 1px solid red;
+    /*временная*/
+    min-height: 374px;
+  }
+
+  .data-form__top-form {
+    width: 193px;
+    padding-left: 60px;
+    padding-top: 17px;
+  }
+
+  .data-form__top-form input {
+    margin-bottom: 50px;
+  }
+
+  .data-form__bottom {
+    display: none;
+  }
+
+  .data-form__introduce {
+    width: 324px;
+    outline: 1px solid red;
+    /*временная*/
+    min-height: 374px;
+  }
+
+  .data-form__contacts {
+    width: 648px;
+    outline: 1px solid red;
+    /*временная*/
+    min-height: 325px;
+  }
+
+  .data-form__vizited {
+    width: 648px;
+    /*временная*/
+    min-height: 287px;
+  }
+
+  .data-form__vizited-form label {
+    width: 244px;
+  }
+
+  .data-form__emotion {
+    width: 648px;
+    /*временная*/
+    min-height: 266px;
+  }
+
+  .data-form__button {
+    margin-bottom: 68px;
+  }
 }

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона-форма</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
   </head>
 
   <body>
@@ -51,26 +52,30 @@
       </div>
 
       <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="data-form__opinion-top">
+        <div class="data-form__top">
           <h3 class="data-form__title">Ваше общее впечатление</h3>
-          <input type="radio" name="opinion" id="plus">
-          <label for="plus">Скорее положительное</label>
-          <input type="radio" name="opinion" id="minus">
-          <label for="minus">Затрудняюсь ответить</label>
-          <input type="radio" name="opinion" id="standart">
-          <label for="standart">Скорее отрицательное</label>
+          <div class="data-form__top-form">
+            <input type="radio" name="opinion" id="plus">
+            <label for="plus">Скорее положительное</label>
+            <input type="radio" name="opinion" id="minus">
+            <label for="minus">Затрудняюсь ответить</label>
+            <input type="radio" name="opinion" id="standart">
+            <label for="standart">Скорее отрицательное</label>
+          </div>
         </div>
         <div class="data-form__introduce">
           <h3 class="data-form__title">Представьтесь:</h3>
-          <label for="name">Имя*:</label>
-          <input type="text" name="name" id="name" value="Петр">
-          <label for="surename">Фамилия*:</label>
-          <input type="text" name="surename" id="surename" value="Иванов">
-          <label for="patronymic">Отчество*:</label>
-          <input type="text" name="patronymic" id="patronymic" value="Александрович">
+          <div class="data-form__title-form">
+            <label for="name">Имя*:</label>
+            <input type="text" name="name" id="name" value="Петр">
+            <label for="surename">Фамилия*:</label>
+            <input type="text" name="surename" id="surename" value="Иванов">
+            <label for="patronymic">Отчество*:</label>
+            <input type="text" name="patronymic" id="patronymic" value="Александрович">
+          </div>
         </div>
         <div class="data-form__contacts">
-          <h3 class="data-form__title">Контактная информация:</h3>
+          <h3 class="data-form__title-contacts">Контактная информация:</h3>
           <label for="phone">Контактный телефон*:</label>
           <input type="tel" id="phone" name="telephone" value="Введите телефон">
           <label for="email">Электронная почта*:</label>
@@ -78,40 +83,37 @@
         </div>
         <div class="data-form__bottom">
           <h3 class="data-form__title">Ваше общее впечатление</h3>
-          <input type="radio" name="opinion" id="plus-bottom" checked>
-          <label for="plus-bottom">Скорее положительное</label>
-          <input type="radio" name="opinion" id="minus-bottom">
-          <label for="minus-bottom">Затрудняюсь ответить</label>
-          <input type="radio" name="opinion" id="standart-bottom">
-          <label for="standart-bottom">Скорее отрицательное</label>
+          <div class="data-form__bottom-form">
+            <input type="radio" name="opinion" id="plus-bottom" checked>
+            <label for="plus-bottom">Скорее положительное</label>
+            <input type="radio" name="opinion" id="minus-bottom">
+            <label for="minus-bottom">Скорее отрицательное</label>
+            <input type="radio" name="opinion" id="standart-bottom">
+            <label for="standart-bottom">Затрудняюсь ответить</label>
+          </div>
         </div>
         <div class="data-form__vizited">
-          <h3 class="data-form__title">Посещенные достопримечательности:</h3>
-          <input type="checkbox" name="demon" id="demon" checked>
-          <label for="demon">Мост Дьявола</label>
-          <input type="checkbox" name="ring" id="ring" checked>
-          <label for="ring">Гора-Колокол</label>
-          <input type="checkbox" name="park" id="park" checked>
-          <label for="park">Слайд-парк</label>
-          <input type="checkbox" name="rock" id="rock">
-          <label for="rock">Красные скалы</label>
+          <h3 class="data-form__title-vizited">Посещенные достопримечательности:</h3>
+          <div class="data-form__vizited-form">
+            <input type="checkbox" name="demon" id="demon" checked>
+            <label for="demon">Мост Дьявола</label>
+            <input type="checkbox" name="ring" id="ring" checked>
+            <label for="ring">Гора-Колокол</label>
+            <input type="checkbox" name="park" id="park" checked>
+            <label for="park">Слайд-парк</label>
+            <input type="checkbox" name="rock" id="rock">
+            <label for="rock">Красные скалы</label>
+          </div>
         </div>
         <div class="data-form__emotion">
-          <h3 class="data-form__title">Опишите свои эмоции:</h3>
-          <textarea rows="6">Опишите подробно все свои восторги</textarea>
+          <h3 class="data-form__title-emotion">Опишите свои эмоции:</h3>
+          <textarea rows="5">Опишите подробно все свои восторги</textarea>
         </div>
-        <button type="submit" class="data__button button">Отправить вызов</button>
+        <button type="submit" class="data-form__button button">Отправить отзыв</button>
 
       </form>
 
       <footer class="page-footer">
-        <map class="page-footer__map" name="maps">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-            <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@1x.jpg" width="320" height="320" alt="карта Аризона">
-          </picture>
-        </map>
         <div class="page-footer__social social">
           <p class="social__adress">#Visitsedona</p>
           <ul class="social__list">
