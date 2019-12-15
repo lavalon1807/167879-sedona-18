@@ -11,7 +11,10 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <button class="main-nav__toggle main-nav__toggle--opened main-nav__toggle--none" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list main-nav--nojs">
           <li class="main-nav__item main-nav__item--disablet">
             <a>Главная</a>
           </li>
@@ -26,7 +29,7 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__pre-logo">
+      <div class="page-header__pre-logo page-header__pre-logo--closed">
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -34,9 +37,6 @@
             <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип шапки">
           </picture>
         </a>
-        <button class="main-nav__toggle button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
     </header>
 
@@ -45,7 +45,7 @@
 
       <section class="greeting">
         <div class="greeting__logo-wrapper">
-          <img class="greeting__logo-text" src="img/text-sedona-index.svg" width="200" height="300" alt="Добропожаловать в Седона">
+          <img class="greeting__logo-text" src="img/text-sedona-index.svg" width="280" height="300" alt="Добропожаловать в Седона">
         </div>
         <div class="greeting__info-wrapper">
           <h2 class="greeting__title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -59,7 +59,7 @@
             <div class="info-one__city-alltext">
               <h3 class="info-one__city-title">Настоящий городок</h3>
               <div class="info-one__city-text">
-                <p>&#8211;№1&#8211;</p>
+                <p class="info-one__text-number">&#8211; №1 &#8211;</p>
                 <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
             </div>
@@ -155,6 +155,6 @@
       </footer>
 
     </main>
-
+    <!-- <script src="js/main-nav.js"></script> -->
   </body>
 </html>
