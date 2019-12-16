@@ -1,24 +1,40 @@
 .social {
-  margin-top: 75px;
+  margin-top: 28px;
 }
 
 .social__item {
-  outline: 1px solid green;
   min-height: 46px;
-  width: 45px;
+  width: 46px;
   color: #000000;
+  background-color: #81b3d2;
 }
 
 .social__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  outline: 1px solid red;
   min-height: 46px;
   width: 150px;
   margin: 0 auto;
   margin-top: 37px;
   padding: 0;
   margin-bottom: 45px;
+}
+
+.social__link svg {
+  padding-top: 15px;
+}
+
+.social__link--twitter {
+  position: absolute;
+  top: 0;
+  left: 13px;
+}
+
+.social__link--facebook {
+  position: absolute;
+  top: -2px;
+  left: 69px;
 }
 
 @media (min-width: @tablet-width) {
