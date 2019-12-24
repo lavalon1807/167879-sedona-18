@@ -1,5 +1,7 @@
 .video {
-  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 47px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .video__title {
@@ -19,10 +21,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .video {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 39px;
+  }
+
   .video__title {
     font-size: 30px;
     line-height: 26px;
-    margin-top: 65px;
+    margin-top: 66px;
   }
 
   .video__sentense {
@@ -33,7 +41,7 @@
 
   .video__form {
     margin-top: 75px;
-    margin-bottom: 56px;
+    margin-bottom: 0;
   }
 
   .video__form img {
@@ -43,13 +51,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .video {
+    padding-bottom: 0;
+  }
+
   .video__title {
-    margin-top: 74px;
+    margin-top: 70px;
   }
 
   .video__form {
     margin-top: 72px;
-    margin-bottom: 102px;
+    margin-bottom: 101px;
   }
 
   .video__form img {

@@ -33,7 +33,7 @@
   border: none;
   width: 62px;
   height: 50px;
-  background-color: #81b3d2;
+  background-color: rgba(129, 179, 210, 0);
   outline: none;
 }
 
@@ -167,13 +167,34 @@
   }
 
   .main-nav__item:hover {
-  box-shadow: none;
-}
+    box-shadow: none;
+    background: none;
+    & a {
+      color: #81b3d2;
+    }
+  }
+
+  .main-nav__item:active a {
+    opacity: 0.3;
+    color: #000000;
+  }
 
   .main-nav__item a {
     color: #000000;
     font-size: 14px;
     line-height: 26px;
+  }
+
+  .main-nav__item--active a {
+    color: #92847b;
+  }
+
+  .main-nav__item--active:hover a {
+    color: #604e43;
+  }
+
+  .main-nav__item--active:active a {
+    opacity: 0.3;
   }
 }
 
