@@ -1,5 +1,5 @@
 .photo-entry {
-  padding-bottom: 23px;
+  padding-bottom: 26px;
 }
 
 .photo-entry__logo-text {
@@ -25,6 +25,15 @@
   margin: 0 auto;
 }
 
+.photo-entry__border {
+  height: 47px;
+  padding-top: 4px;
+  margin-top: -18px;
+  background:
+    linear-gradient(to left bottom, transparent 49.5%, #ffffff 51%) no-repeat,
+    linear-gradient(to right bottom, transparent 49.5%, #ffffff 51%) no-repeat;
+}
+
 @media (min-width: @tablet-width) {
   .photo-entry {
     padding-bottom: 69px;
@@ -34,11 +43,17 @@
     background-color: grey;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -2px -203px;
-    background-size: 97%;
-    height: 319px;
-    margin-top: -28px;
-    width: 106%;
+    background-position: -7px -186px;
+    background-size: 102%;
+    height: 290px;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .photo-entry__logo-text img {
+    width: 460px;
+    padding-right: 0;
+    padding-top: 62px;
   }
 
   .photo-entry__title {
@@ -50,6 +65,26 @@
   .photo-entry__text {
     width: 435px;
     padding-top: 4px;
+  }
+
+  .photo-entry__border {
+    height: 77px;
+    padding-top: 3px;
+    margin-top: 35px;
+    background:
+      linear-gradient(to left bottom, transparent 52.5%, #ffffff 53%) no-repeat,
+      linear-gradient(to right bottom, transparent 53.5%, #ffffff 54%) no-repeat;
+  }
+
+  .photo-entry__border1 {
+    height: 65px;
+    padding-top: 0;
+    margin-top: -98px;
+    margin-right: 33px;
+    margin-left: 33px;
+    background:
+      linear-gradient(to right bottom, transparent 52%, #ffffff 53%) right / 58% 100% no-repeat,
+      linear-gradient(to left bottom, transparent 51%, #ffffff 52%) left / 57% 100% no-repeat;
   }
 }
 
@@ -64,18 +99,38 @@
     background-repeat: no-repeat;
     background-position: 1px -194px;
     background-size: 101%;
-    height: 330px;
-    margin-top: -28px;
+    height: 302px;
+    margin-top: 0;
     width: 100%;
   }
 
   .photo-entry__logo-text img {
     width: 461px;
-    padding-top: 98px;
-    margin-right: 77px;
+    padding-top: 70px;
+    margin-right: 0;
   }
 
   .photo-entry__title {
     margin-top: 110px;
+  }
+
+  .photo-entry__border {
+    height: 72px;
+    padding-top: 4px;
+    margin-top: 22px;
+    background:
+      linear-gradient(to left bottom, transparent 49.5%, #ffffff 51%) left / 67% 100% no-repeat,
+      linear-gradient(to right bottom, transparent 49.5%, #ffffff 51%) right / 67% 100% no-repeat;
+  }
+
+  .photo-entry__border1 {
+    height: 59px;
+    padding-top: 0;
+    margin-top: -75px;
+    margin-right: 250px;
+    margin-left: 250px;
+    background:
+      linear-gradient(to right bottom, transparent 50%, #ffffff 51%) right / 52% 100% no-repeat,
+      linear-gradient(to left bottom, transparent 50%, #ffffff 51%) left / 52% 100% no-repeat;
   }
 }

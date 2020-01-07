@@ -12,36 +12,112 @@
   line-height: 26px;
 }
 
+.greeting__info {
+  padding-top: 12px;
+}
+
 .greeting__info-wrapper {
-  width: 320px;
+  width: 275px;
   margin: 0 auto;
-  min-height: 187px;
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+.greeting__logo-text {
+  padding-top: 45px;
+}
+
+.greeting__border {
+  height: 47px;
+  padding-top: 4px;
+  margin-top: 8px;
+  background:
+    linear-gradient(to left bottom, transparent 49.5%, #ffffff 51%) no-repeat,
+    linear-gradient(to right bottom, transparent 49.5%, #ffffff 51%) no-repeat;
 }
 
 @media (min-width: @tablet-width) {
   .greeting {
-    margin-bottom: 20px;
+    padding-top: 26px;
+  }
+
+  .greeting__border {
+    height: 72px;
+    padding-top: 4px;
+    margin-top: 12px;
+    background:
+      linear-gradient(to left bottom, transparent 49.5%, #ffffff 51%) no-repeat,
+      linear-gradient(to right bottom, transparent 49.5%, #ffffff 51%) no-repeat;
+  }
+
+  .greeting__border1 {
+    height: 59px;
+    padding-top: 0;
+    margin-top: -96px;
+    margin-right: 33px;
+    margin-left: 33px;
+    background:
+      linear-gradient(to right bottom, transparent 50%, #ffffff 51%) right / 50% 100% no-repeat,
+      linear-gradient(to left bottom, transparent 50%, #ffffff 51%) left / 50% 100% no-repeat;
   }
 
   .greeting__logo-wrapper {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 102%;
     height: 544px;
-    margin-top: 0;
     background-position: 0 0;
   }
 
   .greeting__info-wrapper {
-    min-height: 147px;
+    padding-top: 6px;
+    width: 500px;
+  }
+
+  .greeting__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .greeting__logo-text {
+    width: 458px;
+    height: 415px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .greeting {
+    padding-top: 0;
+  }
+
+  .greeting__info-wrapper {
+    padding-top: 14px;
+  }
+
   .greeting__logo-wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 102%;
-    height: 544px;
+    height: 536px;
     margin-top: 0;
     background-position: 0 0;
+  }
+
+  .greeting__border {
+    height: 72px;
+    padding-top: 4px;
+    margin-top: -8px;
+    background:
+      linear-gradient(to left bottom, transparent 49.5%, #ffffff 51%) left / 67% 100% no-repeat,
+      linear-gradient(to right bottom, transparent 49.5%, #ffffff 51%) right / 67% 100% no-repeat;
+  }
+
+  .greeting__border1 {
+    height: 59px;
+    padding-top: 0;
+    margin-top: -75px;
+    margin-right: 250px;
+    margin-left: 250px;
+    background:
+      linear-gradient(to right bottom, transparent 50%, #ffffff 51%) right / 52% 100% no-repeat,
+      linear-gradient(to left bottom, transparent 50%, #ffffff 51%) left / 52% 100% no-repeat;
   }
 }
