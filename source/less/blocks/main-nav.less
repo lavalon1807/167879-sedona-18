@@ -47,14 +47,14 @@
 
 .main-nav__toggle--closed::after,
 .main-nav__toggle--closed::before {
-      content: "";
-      position: absolute;
-      top: 26px;
-      left: 16px;
-      width: 30px;
-      height: 4px;
-      background-color: #ffffff;
-    }
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 16px;
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+}
 
 .main-nav__toggle--closed::before {
   transform: rotate(-45deg);
@@ -67,15 +67,15 @@
 /*для открывания*/
 .main-nav__toggle--opened::after {
   content: "";
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      width: 30px;
-      height: 4px;
-      background-color: #81b3d2;
-      box-shadow:
-        0 8px 0 0 #81b3d2,
-        0 16px 0 0 #81b3d2;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 30px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow:
+    0 8px 0 0 #81b3d2,
+    0 16px 0 0 #81b3d2;
 }
 
 .main-nav__list--opened {
@@ -107,9 +107,7 @@
   box-shadow:
     0 -2px 0 0 rgba(0, 0, 0, 0.2),
     0 2px 0 0 rgba(255, 255, 255, 0.3);
-}
 
-.main-nav__item:hover {
   &:last-child {
     box-shadow:
       0 -2px 0 0 rgba(0, 0, 0, 0.2),
@@ -119,7 +117,6 @@
 
 .main-nav__item:active {
   background-color: #5496bd;
-
 }
 
 .main-nav__item:active a {
@@ -169,9 +166,10 @@
   .main-nav__item:hover {
     box-shadow: none;
     background: none;
-    & a {
-      color: #81b3d2;
-    }
+  }
+
+  .main-nav__item:hover a {
+    color: #81b3d2;
   }
 
   .main-nav__item:active a {
