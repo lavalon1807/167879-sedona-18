@@ -288,6 +288,19 @@ input[type="radio"]:checked ~ label::before {
     background-color: #f2f2f2;
     border-radius: 10%;
   }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    z-index: 3333;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .data-form__vizited-item {
@@ -296,15 +309,7 @@ input[type="radio"]:checked ~ label::before {
   width: 230px;
 }
 
-.data-form__vizited-item svg {
-  display: none;
-  position: absolute;
-  top: 6px;
-  left: 16px;
-  z-index: 1;
-}
-
-.data-form__vizited-item input:checked ~ svg {
+.data-form__vizited-item input:checked ~ label::after {
   display: block;
 }
 
@@ -316,7 +321,11 @@ input[type="radio"]:checked ~ label::before {
   background-color: #d5d5d5;
 }
 
-.data-form__vizited-item input:active ~ svg {
+.data-form__vizited-item label:active label::before {
+  background-color: red;
+}
+
+.data-form__vizited-item input:active ~ label::after {
   opacity: 0.3;
 }
 
@@ -333,7 +342,7 @@ input[type="radio"]:checked ~ label::before {
   width: 257px;
   padding-top: 15px;
   padding-left: 20px;
-  padding-bottom: 14px;
+  padding-bottom: 0;
   border: none;
   background-color: #f2f2f2;
   outline: none;
@@ -590,6 +599,10 @@ input[type="radio"]:checked ~ label::before {
   .data-form__vizited-item {
     width: 200px;
     margin-bottom: 47px;
+
+    &:last-child {
+      width: 203px;
+    }
   }
 
   .data-form__emotion {
@@ -618,6 +631,10 @@ input[type="radio"]:checked ~ label::before {
     margin-top: 50px;
     padding-left: 65px;
     padding-right: 76px;
+  }
+
+  .data-form__necessarily {
+    margin-left: 161px;
   }
 }
 
@@ -693,6 +710,10 @@ input[type="radio"]:checked ~ label::before {
   .data-form__title-contacts {
     margin-left: 280px;
     margin-bottom: 10px;
+  }
+
+  .data-form__vizited {
+    width: 960px;
   }
 
   .data-form__vizited-item {
