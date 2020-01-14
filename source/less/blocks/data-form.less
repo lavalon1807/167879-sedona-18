@@ -99,9 +99,10 @@ textarea:focus::placeholder {
   flex-grow: 1;
   background-color: #f2f2f2;
   border: none;
-  padding: 21px 22px 20px;
-  margin-bottom: 12px;
+  padding: 10px 22px 10px;
   outline: none;
+  height: 38px;
+
 
   &:hover {
     background-color: #e5e5e5;
@@ -116,7 +117,6 @@ textarea:focus::placeholder {
 
 .data-form__contacts label {
   padding-left: 20px;
-  padding-bottom: 6px;
 }
 
 .data-form__title-contacts {
@@ -127,7 +127,12 @@ textarea:focus::placeholder {
 
 .data-form__contacts-item {
   text-align: left;
+
+  &:placeholder {
+    padding-top: 10px;
+  }
 }
+
 
 .data-form__contacts-item input {
   width: 236px;
